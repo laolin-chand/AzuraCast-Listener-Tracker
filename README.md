@@ -22,8 +22,7 @@ Compatibility aliases are also included:
 1. Copy `config.example.php` to `config.php` and fill in your database settings plus AzuraCast API key.
 2. Import `schema.sql` into your MySQL or MariaDB database, or let the scripts create the tables automatically.
 3. Run the logger every 3 minutes.
-4. Run the summary generator daily or hourly.
-5. Open `monthly.php` in your browser.
+4. Open `monthly.php` in your browser.
 
 ## Example commands
 
