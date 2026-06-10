@@ -1,0 +1,5 @@
+config.php
+logs/*.log
+vendor/
+
+!logs/.gitignore
