@@ -23,7 +23,6 @@ function listenerTrackerLoadConfig(): array {
             'snapshot_interval_minutes' => getenv('SNAPSHOT_INTERVAL_MINUTES') !== false ? (int)getenv('SNAPSHOT_INTERVAL_MINUTES') : 3,
         ],
     ];
-
     $config = $defaults;
     $configFile = __DIR__ . '/config.php';
     if (is_file($configFile)) {
