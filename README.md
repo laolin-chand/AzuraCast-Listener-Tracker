@@ -24,27 +24,6 @@ Compatibility aliases are also included:
 3. Run the logger every 3 minutes.
 4. Open `monthly.php` in your browser.
 
-## Example commands
-
-```powershell
-Copy-Item config.example.php config.php
-& 'C:\xampp\php\php.exe' listenership_log_job.php --refresh-stations=1
-& 'C:\xampp\php\php.exe' generate_monthly_summary.php --year=2026 --month=06
-```
-
-To backfill an older month from AzuraCast's retained listener-history data:
-
-```powershell
-& 'C:\xampp\php\php.exe' generate_monthly_summary.php --year=2026 --month=04 --source=azuracast-history
-```
-
-Example cron entry on Linux:
-
-```cron
-*/3 * * * * /usr/bin/php /path/to/listenership_log_job.php >> /path/to/logs/azuracast_listener_cron.log 2>&1
-15 * * * * /usr/bin/php /path/to/generate_monthly_summary.php --year=$(date +\%Y) --month=$(date +\%m)
-```
-
 ## Report model
 
 - Raw data is stored in `listener_snapshots`
